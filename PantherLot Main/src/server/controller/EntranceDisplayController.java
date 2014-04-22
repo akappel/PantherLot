@@ -120,7 +120,7 @@ public class EntranceDisplayController
             }
         }
         
-        userType = wDisp.getType();
+        userType = wDisp.getUserType();
         userID = wDisp.getID();
             
         createUser();       

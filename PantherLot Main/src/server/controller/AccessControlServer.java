@@ -179,7 +179,8 @@ public class AccessControlServer extends Thread
      */
     public boolean isConnectionAvailable(String key)
     {
-        return (displayConnections.get(key) == null);
+    		if (displayConnections.get(key) == null) return false;
+    		return true;
     }
     /**
      * private class that handles each connection on a separate thread.
