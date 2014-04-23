@@ -37,5 +37,12 @@ public class PantherLotSpotDriver extends Thread {
             Thread spot = new SpotDisplay("localhost", 3738, spotNumber);
             spot.start();
         }
+        
+        try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
